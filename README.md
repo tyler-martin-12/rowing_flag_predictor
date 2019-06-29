@@ -8,6 +8,8 @@ Invocation `open flag prediction`
 
 Getting prediction `today at 2 pm`
 
+or `flag prediction for today at 2 pm`
+
 ## Gathering data
 
 ## Making prediction model
