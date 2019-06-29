@@ -14,11 +14,11 @@ AWS lambda
 Alexa Skills
 
 ## to do
-
-add files to repo
+data files to repo
 do data vis in notebook
 
 ## done
+alexa flies to repo
 publish skill
 	2nd prediction logic
 	logo
