@@ -11,6 +11,13 @@ Getting prediction `today at 2 pm`
 or `flag prediction for today at 2 pm`
 
 ## Gathering data
+Historical flag data was collected from two sources
+
+1. Tweets from the last 5 years
+
+2. Hourly checks of the flag in the past 6 months
+
+See `data_generator.py` for details
 
 ## Making prediction model
 
