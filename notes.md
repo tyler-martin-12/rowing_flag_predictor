@@ -29,3 +29,7 @@ publish skill
 
 ## commands
 scp mlmi_cluster2:/homes/tam66/Documents/side/flag/data_generator.py .
+
+
+https://raw.githubusercontent.com/tyler-martin-12/rowing_flag_predictor/master/data/df.csv
+

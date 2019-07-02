@@ -5,7 +5,7 @@ from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 
 df = pd.read_csv(
- "https://raw.githubusercontent.com/tyler-martin-12/alexa_check_flag_skill/master/df_final.csv",index_col=0)
+ "https://raw.githubusercontent.com/tyler-martin-12/rowing_flag_predictor/master/data/df.csv",index_col=0)
 
 print(df.head())
 
