@@ -13,6 +13,9 @@ data vis
 AWS lambda
 Alexa Skills
 
+## now
+what data is in the csv?
+
 ## to do
 data files to repo
 do data vis in notebook
