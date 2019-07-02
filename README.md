@@ -37,3 +37,5 @@ Which results in the following prediction
 ## Resources
 
 [Number Geek Tutorial](https://gist.github.com/muttoni/0b1ee638f6c74a0681f9d694cf11ef63)
+
+[AWS Cloud 9 // Lambda Tutorial](https://medium.com/snapdocs-product-blog/model-services-for-the-cloud-from-the-cloud-or-cloud9-lambda-gateway-data-in-use-d161de65a9cf)

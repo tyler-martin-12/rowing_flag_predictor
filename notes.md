@@ -23,3 +23,6 @@ publish skill
 	2nd prediction logic
 	logo
 	description
+
+## commands
+scp mlmi_cluster2:/homes/tam66/Documents/side/flag/data_generator.py .
