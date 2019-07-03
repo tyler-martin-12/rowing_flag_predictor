@@ -14,7 +14,8 @@ AWS lambda
 Alexa Skills
 
 ## now
-what data is in the csv?
+collect new data
+move to repo
 
 ## to do
 data files to repo
@@ -26,6 +27,8 @@ publish skill
 	2nd prediction logic
 	logo
 	description
+what data is in the csv?
+only from data_gen.py
 
 ## commands
 scp mlmi_cluster2:/homes/tam66/Documents/side/flag/data_generator.py .

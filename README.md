@@ -17,7 +17,7 @@ Historical flag data was collected from two sources
 
 2. Hourly checks of the flag in the past 6 months
 
-See `data_generator.py` for details
+See `data/data_generator.py` for details of (2)
 
 ## Making prediction model
 
