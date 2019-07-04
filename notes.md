@@ -14,12 +14,9 @@ AWS lambda
 Alexa Skills
 
 ## now
-collect new data
-move to repo
+new model, data vis in notebook
 
 ## to do
-data files to repo
-do data vis in notebook
 
 ## done
 alexa flies to repo
@@ -29,6 +26,10 @@ publish skill
 	description
 what data is in the csv?
 only from data_gen.py
+collect new data
+move to repo
+data files to repo
+
 
 ## commands
 scp mlmi_cluster2:/homes/tam66/Documents/side/flag/data_generator.py .
