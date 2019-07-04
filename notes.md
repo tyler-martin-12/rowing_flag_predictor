@@ -14,11 +14,18 @@ AWS lambda
 Alexa Skills
 
 ## now
-new model, data vis in notebook
+try nn
+finalize data vis
+
+select model
+new model on cloud 9
 
 ## to do
 
 ## done
+sort colorbar
+plot both models
+
 alexa flies to repo
 publish skill
 	2nd prediction logic
