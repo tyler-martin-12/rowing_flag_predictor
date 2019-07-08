@@ -32,7 +32,7 @@ The data from the about sources was merged into a DataFrame(`data/csvs/merged_df
 ![Data Visualization](data/figs/data_viz.png)
 
 
-![Parameter Sweep](data/figs/param_sweep.png.png)
+![Parameter Sweep](data/figs/param_sweep.png)
 
 And using 
 ![Model Comparison](data/figs/model_comparison_2.png)
