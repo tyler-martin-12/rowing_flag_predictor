@@ -1,6 +1,12 @@
 ## My edits
+/data/backup/
+/data/backup/*
 /data/keys/
 /data/keys/*
+
+notes.md
+/notes.md
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
