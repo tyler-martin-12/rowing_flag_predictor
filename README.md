@@ -21,6 +21,10 @@ See `data/data_generator.py` for details of (2)
 
 ## Making prediction model
 
+Using the data,
+
+![Data Visualization](data/figs/data_viz.png)
+
 ## Creating API on AWS Lambda
 
 This makes the API endpoint executable with the following
