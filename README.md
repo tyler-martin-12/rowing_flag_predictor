@@ -10,31 +10,45 @@ Getting prediction `today at 2 pm`
 
 or `flag prediction for today at 2 pm`
 
+## Problem statement
+I wanted to create an algorithm to predict the flag color (https://www.cucbc.org/flag) for rowing conditions in Cambridge, UK based on forecasted weather. Knowing the likely color in advance would help crews cancel or reschedule outings.
+
+In addition, the flag is not always operational, like during holidays, and it would be useful for rowers still rowing in this time to know about predicted weather conditions to schedule outings.
+
+
 ## Gathering data
 Historical flag data was collected from two sources
 
-1. Tweets from the last 5 years
+1. [Tweets](https://twitter.com/cucbc) from the last 5 years 
 
 2. Hourly checks of the flag in the past 6 months
 
-See `data/data_generator.py` for details of (2)
+See `data/data_generator.py` for details of (2). From a long list of weather details four features were selected: precipitation intensity (0-1), precipitation probablity (0-1), temperature (F), and wind speed (mph). Visibility would also be useful but seems to not have been recorded by DarkSky. Therefore these four variables were collected concurrently with the flag data (color, time).
 
 ## Making prediction model
 
-Using the data,
+The data from the about sources was merged into a DataFrame(`data/csvs/merged_df.csv`). Using this, several models and metrics were explored after doing some exploratry data analysis.
 
 ![Data Visualization](data/figs/data_viz.png)
+
+
+![Parameter Sweep](data/figs/param_sweep.png.png)
+
+And using 
+![Model Comparison](data/figs/model_comparison_2.png)
+
+
 
 ## Creating API on AWS Lambda
 
 This makes the API endpoint executable with the following
-`https://i8wamt3qgj.execute-api.us-east-1.amazonaws.com/default?x0=${precipIntensity}&x1=${precipProbability}&x2=${temperature}&x3=${windSpeed}`
+`https://mv7r9rtnef.execute-api.us-west-2.amazonaws.com/dev/flag-lambda-dev-predict?x0=${precipIntensity}&x1=${precipProbability}&x2=${temperature}&x3=${windSpeed}`
 
-For example, using `precipIntensity` of 0, `precipProbability` of 0, `temperature` of 50, and `windSpeed` of 50:
-`https://i8wamt3qgj.execute-api.us-east-1.amazonaws.com/default?x0=0&x1=0&x2=50&x3=5`
+For example, using `precipIntensity` of 0, `precipProbability` of 0, `temperature` of 67, and `windSpeed` of 0:
+`https://mv7r9rtnef.execute-api.us-west-2.amazonaws.com/dev/flag-lambda-dev-predict?x0=0&x1=0&x2=67&x3=0`
 
 Which results in the following prediction
-`Prediction 0.00030347725002622685`
+`Prediction 0.07932057`
 
 ## Creating Alexa skill
 
