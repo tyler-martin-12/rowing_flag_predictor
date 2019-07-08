@@ -6,6 +6,9 @@
 
 notes.md
 /notes.md
+lambda_files/for_serverless/vendored/
+lambda_files/for_serverless/vendored/*
+
 
 
 # Byte-compiled / optimized / DLL files
