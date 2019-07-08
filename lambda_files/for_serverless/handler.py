@@ -1,6 +1,6 @@
-import os
-import sys
-import json
+## see https://github.com/jacopotagliabue/tensorflow_to_lambda_serverless
+## and https://medium.com/tooso/serving-tensorflow-predictions-with-python-and-aws-lambda-facb4ab87ddd
+## for source code and blog post
 
 import os
 import sys
