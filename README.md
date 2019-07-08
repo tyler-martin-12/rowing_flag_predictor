@@ -29,13 +29,12 @@ See `data/data_generator.py` for details of (2). From a long list of weather det
 
 The data from the about sources was merged into a DataFrame(`data/csvs/merged_df.csv`). Using this, several models and metrics were explored after doing some exploratry data analysis.
 
-![Data Visualization](data/figs/data_viz.png)
+<img src="data/figs/data_viz.png" width="48">
 
+<img src="data/figs/param_sweep.png" width="48">
+ 
+<img src="data/figs/model_comparison_2.png" width="48">
 
-![Parameter Sweep](data/figs/param_sweep.png)
-
-And using 
-![Model Comparison](data/figs/model_comparison_2.png)
 
 
 
