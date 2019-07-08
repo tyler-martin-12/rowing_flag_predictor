@@ -31,7 +31,7 @@ The data from the about sources was merged into a DataFrame(`data/csvs/merged_df
 
 <img src="data/figs/data_viz.png" width="700">
 
-<img src="data/figs/param_sweep.png" width="700">
+<img src="data/figs/param_sweep.png" width="400">
  
 <img src="data/figs/model_comparison_2.png" width="700">
 
@@ -50,6 +50,10 @@ Which results in the following prediction
 `Prediction 0.07932057`
 
 ## Creating Alexa skill
+
+## Future work
+1. The interaction model of the Alexa skill could be better/more advanced
+2. An ensenble model
 
 ## Resources
 
