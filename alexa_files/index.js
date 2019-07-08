@@ -58,8 +58,8 @@ const GetPredictionIntentHandler = {
 
 
         // get weather prediction
-        const dark_sky_key = 'my_dark_sky_key'; // changed to keep my API key secret
-        const lat_num = '52.213268'; // Cambridge, UK lat long
+        const dark_sky_key = '1428dbd5b7306e4a03b3568d92f660f2';
+        const lat_num = '52.213268';
         const lng_num = '0.123658';
         var url = `https://api.darksky.net/forecast/${dark_sky_key}/${lat_num},${lng_num},${mytime_num}`;
         
@@ -76,11 +76,15 @@ const GetPredictionIntentHandler = {
         const precipProbability = weather.precipProbability
         const temperature = weather.temperature
         const windSpeed = weather.windSpeed
+        // const windSpeed = 50
         
         console.log(windSpeed);
         
         // get prediction
-        const ML_url = `https://i8wamt3qgj.execute-api.us-east-1.amazonaws.com/default?x0=${precipIntensity}&x1=${precipProbability}&x2=${temperature}&x3=${windSpeed}`
+        // const ML_url = `https://i8wamt3qgj.execute-api.us-east-1.amazonaws.com/default?x0=${precipIntensity}&x1=${precipProbability}&x2=${temperature}&x3=${windSpeed}`
+        const ML_url = `https://mv7r9rtnef.execute-api.us-west-2.amazonaws.com/dev/flag-lambda-dev-predict?x0=${precipIntensity}&x1=${precipProbability}&x2=${temperature}&x3=${windSpeed}`
+    
+        console.log(ML_url); 
         const ML_response = await fetch(ML_url);
         const ML_text = await ML_response.text();
         const prediction = parseFloat(ML_text.substr(10)).toFixed(2) * 100
