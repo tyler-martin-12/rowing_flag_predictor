@@ -1,8 +1,8 @@
 # Cambridge rowing flag predictor
 Weather data is from the [DarkSky API](https://darksky.net/dev)
 
-## Using Alexa skill
-Enable skill search `Cambridge rowing flag prediction`
+# Using Alexa skill
+Enable skill search `Cambridge rowing flag prediction` or [Here in the Alexa Skills Store](https://www.amazon.co.uk/Tyler-Martin-Cambridge-Rowing-Prediction/dp/B07TQGZLSX/ref=sr_1_1?keywords=cambridge+rowing&qid=1562697643&s=digital-skills&sr=1-1)
 
 Invocation `open flag prediction`
 
