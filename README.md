@@ -2,7 +2,7 @@
 Weather data is from the [DarkSky API](https://darksky.net/dev)
 
 # Using Alexa skill
-Enable skill search `Cambridge rowing flag prediction` or [Here in the Alexa Skills Store](https://www.amazon.co.uk/Tyler-Martin-Cambridge-Rowing-Prediction/dp/B07TQGZLSX/ref=sr_1_1?keywords=cambridge+rowing&qid=1562697643&s=digital-skills&sr=1-1)
+To enable this skill, search for `Cambridge rowing flag prediction` or find it [here in the Alexa Skills Store](https://www.amazon.co.uk/Tyler-Martin-Cambridge-Rowing-Prediction/dp/B07TQGZLSX/ref=sr_1_1?keywords=cambridge+rowing&qid=1562697643&s=digital-skills&sr=1-1)
 
 Invocation `open flag prediction`
 
@@ -43,7 +43,7 @@ There are 5834 green flag examples (class 1) compared to 2197 yellow/red flag ex
 
 Finally, several models were compared and their decision boundaries (in probability) were plotted. The neural net has two 100 unit fully connected layers with relu activation and a 25% dropout rate followed by a softmax output with 2 units for the two classes. The neural network seems to handle this task well, although the linear SVM provides a decent solution too.
  
-<img src="data/figs/model_comparison_2.png" width="700">
+<img src="data/figs/model_comparison_2.png" width="900">
 
 Surprisingly, the precipitation features were weakly negatively correlated with the yellow/red flag (an increase in precipiation led to a lower probablity of a yellow/red flag). Although the official guidelines for setting the flag do not mention precipitation, I thought this would be an important feature because it makes conditions seems 
 much worse and the flag is set by a subjective human. Perhaps these features could be removed in the future or could be further investigated to see if there is correlation under certain conditions.
@@ -67,8 +67,8 @@ Finally, I wanted to quickly access these prediction through Alexa, so I created
 
 ## Future work
 1. The interaction model of the Alexa skill could be better/more advanced
-2. An ensenble model
-3. Include a red flag class with more data
+2. An ensenble model might be a better solution as there is a signifant discrepancy betwee Linear SVM and neural net probability prediction 
+3. A red flag class could be added with more data
 
 ## Resources
 
